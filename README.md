@@ -19,6 +19,15 @@ The main goal here is **professional and technical growth** — to explore game 
 
 ### Requirements
 
-- C++17 or newer  
+- C++17 or newer
 - SFML (Simple and Fast Multimedia Library) [SFML Oficial Domain](https://www.sfml-dev.org/)
 - To use SFML with this engine, you’ll need a C++ compiler that SFML supports on your platform (Windows, macOS, Linux). Please consult the official SFML documentation for details on which compilers and configurations are recommended or required and how to set up your build environment properly.
+
+## Credits
+
+Built on top of **SFML** by Laurent Gomila — [sfml-dev.org](https://www.sfml-dev.org/)
+
+**KoP Engine** is developed by [Kaguyo](https://github.com/kaguyo).  
+Licensed under the [zlib License](./LICENSE).
+
+> If this library was useful to your project, a credit — *"Powered by KoP Engine — by Kaguyo"* — is appreciated but not required.
