@@ -30,4 +30,4 @@ Built on top of **SFML** by Laurent Gomila — [sfml-dev.org](https://www.sfml-d
 **KoP Engine** is developed by [Kaguyo](https://github.com/kaguyo).  
 Licensed under the [zlib License](./LICENSE).
 
-> If this library was useful to your project, a credit — *"Powered by KoP Engine — by Kaguyo"* — is appreciated but not required.
+> If this library was useful to your project, a credit — *"Powered by KoP Engine"* — is appreciated but not required.
