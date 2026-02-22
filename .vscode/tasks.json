@@ -1,0 +1,57 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Make build dir",
+      "type": "shell",
+      "command": "cmd",
+      "args": ["/c", "if not exist build mkdir build"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "type": "cppbuild",
+      "label": "Build SFML App",
+      "command": "C:\\winlibs\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-fdiagnostics-color=always",
+        "-g",
+        "-DSFML_STATIC",
+        "-IC:\\SFML\\include",
+        "${workspaceFolder}\\main.cpp",
+        "-LC:\\SFML\\lib",
+        "-lsfml-graphics-s-d",
+        "-lsfml-window-s-d",
+        "-lsfml-system-s-d",
+        "-lsfml-main-s-d",
+        "-lfreetype",
+        "-lopengl32",
+        "-lwinmm",
+        "-lgdi32",
+        "-ld3d11",
+        "-ldxgi",
+        "-ld3dcompiler",
+        "-lole32",
+        "-loleaut32",
+        "-luuid",
+        "-static",
+        "-static-libgcc",
+        "-static-libstdc++",
+        "-mwindows",
+        "-o",
+        "${workspaceFolder}\\build\\main.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "Make build dir",
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
